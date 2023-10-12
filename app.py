@@ -38,7 +38,7 @@ movies_dict = pickle.load(open('movies_dict','rb'))
 movies = pd.DataFrame(movies_dict)
 
 
-st.title('Movie Recommendation')
+st.title('Cinema Suggest')
 select_movie = st.selectbox(
     'Select Your Favourite Movie',
     movies['title'].values)
